@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+{% block body -%}
+<!-- POSTS -->
+  <section id="list" class="py-04">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h4>List of Cities</h4>
+            </div>
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th>#</th>
+                  <th>City Id</th>
+                  <th>City Name</th>
+                  <th>Weather</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+              	{% for city in cities %}
+                <tr>
+                  <td>{{city.id}}</td>
+                  <td>{{city.cityId}}</td>
+                  <td>{{city.cityName}}</td>
+                  <td>{% if city.cityWeather %}
+                		Updated
+            		{% else %}
+   						No Data
+            		{% endif %}
+            	  </td>
+                  <td>
+                    <a href="weather/city/{{ city.cityId }}" class="btn btn-secondary">
+                      <i class="fas fa-angle-double-right"></i> Details
+                    </a>
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+ {% endblock %}

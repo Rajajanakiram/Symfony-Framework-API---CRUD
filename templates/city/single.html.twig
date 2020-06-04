@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+{% block body -%}
+<!-- LOGIN -->
+<section id="login" class="py-04">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-5 ml-auto">
+          <div class="card">
+            <div class="card-header">
+              <h5>{{ city.cityName| upper}}</h5>
+            </div>
+            <div class="card-body">
+                <form action="/weather/save" id="frm" name="frm" method="post">
+                <div class="form-group">
+                	<label for="title">City Id</label>
+                    <input type="text" name="city_id" id="city_id" value="{{city.cityId}}" class="form-control" readonly />
+                </div>
+                <div class="form-group">
+                   	<label for="title">City Name</label>
+                    <input type="text" name="city_name" id="city_name" value="{{city.cityName}}" class="form-control" readonly />
+                </div>
+                <div class="form-group">
+                   	<label for="title">Country Name</label>
+                    <input type="text" name="country_name" id="country_name" value="{{city.countryID}}" class="form-control" readonly />
+                </div>
+                    <input type="submit" name="getWeather" id="getWeather" value="Get Weather & Save" class="btn btn-info btn-block">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 mr-auto">
+            <div class="card">
+            <div class="card-header">
+              <h5>Weather Info</h5>
+            </div>
+            <div class="card-body">
+                <pre>
+        	{% if city.cityWeather %}
+        		{{ city.cityWeather | json_encode(constant('JSON_PRETTY_PRINT'))}}
+    		{% else %}
+				No Data
+    		{% endif %}
+                </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+{% endblock %}

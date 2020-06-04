@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <!-- Bootstrap core CSS -->
+    	<link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+          crossorigin="anonymous">
+    </head>
+    <body>
+    	<header>
+	        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	            <div class="container">
+
+	                <a class="navbar-brand" href="/">Weather</a>
+
+	                <div class="collapse navbar-collapse">
+	                    <ul class="navbar-nav ml-auto">
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="/palindrome">Palindrome</a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="/string-reverse">Reverse string</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+
+	        </nav>
+	    </header>
+
+    	<main role="main" class="container main">
+    		<section id="header" class="py-04">
+    			&nbsp;
+    		</section>
+        	{% block body %}{% endblock %}
+        	{% block javascripts %}{% endblock %}
+    	</main>
+    	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    	</script>
+    	<script type="text/javascript" src="/build/app.js"></script>
+    </body>
+</html>

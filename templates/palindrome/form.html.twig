@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block body -%}
+<!-- LOGIN -->
+<section id="login" class="py-04">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-5 ml-auto">
+          <div class="card">
+            <div class="card-header">
+              <h5>Palindrome</h5>
+            </div>
+            <div class="card-body">
+              <form action="/palindrome/check" id="palindromeFrm" name="palindromeFrm" method="post">
+                <div class="form-group">
+                	<label for="title">Enter String</label>
+                    <input type="text" name="string" id="string" value="" class="form-control" />
+                </div>
+                    <input type="submit" name="check" id="check" value="Check Palindrome" class="btn btn-info btn-block">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 mr-auto">
+            <div class="card">
+            <div class="card-header">
+              <h5>Result</h5>
+            </div>
+            <div class="card-body">
+                <code>
+      	       
+        		      
+                </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}

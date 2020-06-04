@@ -1,20 +1,23 @@
-# Composer files
-composer.phar
-vendor/
 
-# Local configs
-config/autoload/*.local.php
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
 
-# Binary gettext files
-*.mo
+###> symfony/phpunit-bridge ###
+.phpunit
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
 
-# Data
-data/logs/
-data/cache/
-data/sessions/
-data/tmp/
-temp/
-
-# Legacy ZF1
-demos/
-extras/documentation
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
