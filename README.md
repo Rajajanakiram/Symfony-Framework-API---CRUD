@@ -1,13 +1,5 @@
-# myproject
 
-
--- phpMyAdmin SQL Dump
--- version 4.8.3
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1:3306
--- Generation Time: Jun 04, 2020 at 05:57 AM
--- Server version: 5.7.23
+# Mysql Dump
 -- PHP Version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -79,4 +71,18 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+License
+=======
+
+This project is licensed under the MIT license.
+Please see the [LICENSE file](https://github.com/Rajajanakiram/Symfony-Framework-API---CRUD/blob/master/LICENSE)
+distributed with this source code for further information regarding copyright and licensing.
+
+Be aware that the OpenWeatherMap data is **not licensed under the MIT**.
+**Check out the following official links to read about the terms, pricing and license of OpenWeatherMap before using their service:**
+
+- [OpenWeatherMap.org/terms](http://OpenWeatherMap.org/terms)
+- [OpenWeatherMap.org/appid](http://OpenWeatherMap.org/appid)
 
