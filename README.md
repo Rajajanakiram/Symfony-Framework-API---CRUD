@@ -83,6 +83,6 @@ distributed with this source code for further information regarding copyright an
 Be aware that the OpenWeatherMap data is **not licensed under the MIT**.
 **Check out the following official links to read about the terms, pricing and license of OpenWeatherMap before using their service:**
 
-- [OpenWeatherMap.org/terms](http://OpenWeatherMap.org/terms)
+- [OpenWeatherMap.org/terms](https://openweather.co.uk/storage/app/media/Terms/Openweather_terms_and_conditions_of_sale.pdf)
 - [OpenWeatherMap.org/appid](http://OpenWeatherMap.org/appid)
 
