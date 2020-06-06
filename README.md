@@ -85,4 +85,5 @@ Be aware that the OpenWeatherMap data is **not licensed under the MIT**.
 
 - [OpenWeatherMap.org/terms](https://openweather.co.uk/storage/app/media/Terms/Openweather_terms_and_conditions_of_sale.pdf)
 - [OpenWeatherMap.org/appid](http://OpenWeatherMap.org/appid)
+- [Openweathermap.org/price](https://openweathermap.org/price)
 
